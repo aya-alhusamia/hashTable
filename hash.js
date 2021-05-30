@@ -55,9 +55,9 @@ class HashTable{
         
     }
     insert=(key,valu)=>{
-        const classRom= this.hash(score)
-        if(this.classes[classRom].length <this.classSize){
-            this.classes[classRom].push({key,valu})
+        const classRoom= this.hash(score)
+        if(this.classes[classRoom].length <this.classSize){
+            this.classes[classRoom].push({key,valu})
         }
     }
 
