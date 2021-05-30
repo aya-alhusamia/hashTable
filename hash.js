@@ -27,7 +27,8 @@ const students = [
     { name: "Seth Rodriguezh", score: 67 },
     { name: "Diego Mayer", score: 100 },
 ]
-const prompts = require('prompts');
+const prompt = require('prompt-sync')({sigint: true});
+
 
 class HashTable{
     constructor(classSize){
@@ -55,7 +56,7 @@ class HashTable{
         
     }
     insert=(key,valu)=>{
-        const classRoom= this.hash(score)
+        const classRoom= this.hash(valu)
         if(this.classes[classRoom].length <this.classSize){
             this.classes[classRoom].push({key,valu})
         }
